@@ -1,4 +1,5 @@
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
 public class BankAccount {
 
 	private
@@ -48,6 +49,13 @@ public class BankAccount {
 			 System.out.println("Account Type : SAVINGS");
 		 else
 			 System.out.println("Account Type : CURRENT");
+		 
+		 
+		 SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");  
+		    Date date = new Date(); 
+		    System.out.print("Date Of Creaation : ");
+		    System.out.println(formatter.format(date)); 
+		 
 		 
 		 System.out.println("\n");
 	 }
